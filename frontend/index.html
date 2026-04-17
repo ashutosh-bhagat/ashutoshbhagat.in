@@ -8,7 +8,7 @@
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <link rel="icon" type="image/png" href="./profile.svg" />
+    <link rel="icon" type="image/png" href="./portfolio.svg" />
 
     <!-- Font Awesome -->
     <link
@@ -532,31 +532,130 @@
                 class="absolute inset-0 flex items-center justify-center bg-white/5 hover:bg-white/10 transition-colors"
               >
                 <i
-                  class="fas fa-clipboard text-4xl md:text-5xl text-textMuted group-hover:text-accent transition-colors"
+                  class="fas fa-robot text-4xl md:text-5xl text-textMuted group-hover:text-accent transition-colors"
                 ></i>
-                <a
-                  href="https://clipy-clipboard.vercel.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src="./project-img/clipy-clipboard.png"
-                    alt="Clipy-Clipboard Screenshot"
-                    class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute inset-0 w-full h-full object-cover rounded-lg"
-                  />
-                </a>
+
+                <img
+                  src="./project-img/clipy-clipboard.png"
+                  alt="Clipy-Clipboard Screenshot"
+                  class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute inset-0 w-full h-full object-cover rounded-lg"
+                />
               </div>
             </div>
             <div class="md:col-span-7 flex flex-col justify-center">
               <div
                 class="text-accent text-xs font-mono tracking-[0.4em] mb-3 uppercase"
               >
-                01.Web Application
+                01. AI/NLP Project
               </div>
               <div
                 class="inline-flex items-center gap-2 px-2.5 py-0.5 rounded-full bg-white/5 border border-white/10 text-xs font-medium text-accent mb-2 w-auto"
                 style="width: fit-content; min-width: 0"
               >
+                <span class="w-1.5 h-1.5 rounded-full bg-accent blink"></span>
+                <span>Deployed</span>
+              </div>
+              <h3 class="text-2xl font-bold text-white mb-3">
+                Clipy-Clipboard
+              </h3>
+              <p
+                class="text-textMuted mb-5 leading-relaxed text-base text-justify"
+              >
+                Developed an AI-powered news intelligence system that uses
+                transformer-based embeddings to understand the semantic meaning
+                of user input and retrieve contextually similar past news
+                articles. Implemented vector similarity search using FAISS for
+                efficient large-scale retrieval, forming the foundation for a
+                predictive reasoning system based on historical patterns.
+              </p>
+              <div
+                class="flex flex-wrap gap-3 text-[0.65rem] font-mono text-gray-400 mb-5"
+              >
+                <span
+                  class="bg-surface px-2 py-1 rounded border border-white/5 hover:text-accent transition-colors"
+                  >NLP</span
+                >
+                <span
+                  class="bg-surface px-2 py-1 rounded border border-white/5 hover:text-accent transition-colors"
+                  >Sentence Transformers (BERT)</span
+                >
+                <span
+                  class="bg-surface px-2 py-1 rounded border border-white/5 hover:text-accent transition-colors"
+                  >Semantic Search</span
+                >
+                <span
+                  class="bg-surface px-2 py-1 rounded border border-white/5 hover:text-accent transition-colors"
+                  >FAISS</span
+                >
+                <span
+                  class="bg-surface px-2 py-1 rounded border border-white/5 hover:text-accent transition-colors"
+                  >Streamlit</span
+                >
+              </div>
+              <!-- <div
+                class="p-4 bg-surface/60 border border-white/10 rounded-xl text-sm text-textMuted mb-5"
+              >
+                <p class="text-white font-semibold mb-1">Impact</p>
+                <p>
+                  Cut quote turnaround time by 35% and unlocked +18% win-rate
+                  for enterprise sales through better price guidance.
+                </p>
+              </div> -->
+              <div class="flex items-center gap-4">
+                <a
+                  href="https://github.com/ashutosh-bhagat/News-Catcher"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-white hover:text-accent transition-colors text-sm font-medium border-b border-transparent hover:border-accent"
+                  >View Project</a
+                >
+                <a
+                  href="https://github.com/ashutosh-bhagat/News-Catcher"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-textMuted hover:text-white transition-colors"
+                  ><i class="fab fa-github text-lg"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div
+            class="group grid grid-cols-1 md:grid-cols-12 gap-10 items-start border-b border-white/10 pb-10 grid-popup"
+          >
+            <div
+              class="md:col-span-5 md:order-2 relative overflow-hidden rounded-lg bg-surface aspect-video border border-white/5 max-w-2xl w-full mx-auto"
+              style="min-height: 320px; max-height: 440px"
+            >
+              <!-- Placeholder for Project Image -->
+              <div
+                class="absolute inset-0 flex items-center justify-center bg-white/5 hover:bg-white/10 transition-colors"
+              >
+                <i
+                  class="fas fa-clipboard text-4xl md:text-5xl text-textMuted group-hover:text-accent transition-colors"
+                ></i>
+
+                <img
+                  src="./project-img/clipy-clipboard.png"
+                  alt="Handwritten Digit Classifier screenshot"
+                  class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute inset-0 w-full h-full object-cover rounded-lg"
+                />
+              </div>
+            </div>
+            <div class="md:col-span-7 md:order-1 flex flex-col justify-center">
+              <div
+                class="text-accent text-xs font-mono tracking-[0.4em] mb-3 uppercase"
+              >
+                02.Web Application
+              </div>
+              <div
+                class="inline-flex items-center gap-2 px-2.5 py-0.5 rounded-full bg-white/5 border border-white/10 text-xs font-medium text-green-500 mb-2 w-auto"
+                style="width: fit-content; min-width: 0"
+              >
+                <!-- <span
+                  class="w-1.5 h-1.5 rounded-full bg-yellow-500 blink"
+                ></span> -->
                 <span class="w-1.5 h-1.5 rounded-full bg-accent blink"></span>
                 <span>Deployed</span>
               </div>
@@ -588,15 +687,7 @@
                   >HTML5 & CSS3</span
                 >
               </div>
-              <!-- <div
-                class="p-4 bg-surface/60 border border-white/10 rounded-xl text-sm text-textMuted mb-5"
-              >
-                <p class="text-white font-semibold mb-1">Impact</p>
-                <p>
-                  Cut quote turnaround time by 35% and unlocked +18% win-rate
-                  for enterprise sales through better price guidance.
-                </p>
-              </div> -->
+
               <div class="flex items-center gap-4">
                 <a
                   href="https://clipy-clipboard.vercel.app/"
@@ -607,97 +698,6 @@
                 >
                 <a
                   href="https://github.com/ashutosh-bhagat/Clipy_Clipboard"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="text-textMuted hover:text-white transition-colors"
-                  ><i class="fab fa-github text-lg"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 2 -->
-          <div
-            class="group grid grid-cols-1 md:grid-cols-12 gap-10 items-start border-b border-white/10 pb-10 grid-popup"
-          >
-            <div
-              class="md:col-span-5 md:order-2 relative overflow-hidden rounded-lg bg-surface aspect-video border border-white/5 max-w-2xl w-full mx-auto"
-              style="min-height: 320px; max-height: 440px"
-            >
-              <!-- Placeholder for Project Image -->
-              <div
-                class="absolute inset-0 flex items-center justify-center bg-white/5 hover:bg-white/10 transition-colors"
-              >
-                <i
-                  class="fas fa-robot text-4xl md:text-5xl text-textMuted group-hover:text-accent transition-colors"
-                ></i>
-                <a
-                  href="https://github.com/ashutosh-bhagat/Car-Resale-Price"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src="./project-img/car-resale-github.png"
-                    alt="Handwritten Digit Classifier screenshot"
-                    class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute inset-0 w-full h-full object-cover rounded-lg"
-                  />
-                </a>
-              </div>
-            </div>
-            <div class="md:col-span-7 md:order-1 flex flex-col justify-center">
-              <div
-                class="text-accent text-xs font-mono tracking-[0.4em] mb-3 uppercase"
-              >
-                02.Machine Learning Project
-              </div>
-              <div
-                class="inline-flex items-center gap-2 px-2.5 py-0.5 rounded-full bg-white/5 border border-white/10 text-xs font-medium text-yellow-500 mb-2 w-auto"
-                style="width: fit-content; min-width: 0"
-              >
-                <span
-                  class="w-1.5 h-1.5 rounded-full bg-yellow-500 blink"
-                ></span>
-                <span>In Progress</span>
-              </div>
-              <h3 class="text-2xl font-bold text-white mb-3">
-                Car Resale Price Prediction
-              </h3>
-              <p
-                class="text-textMuted mb-5 leading-relaxed text-base text-justify"
-              >
-                A Machine Learning project that predicts the price of a car
-                based on its features. It uses a dataset of cars and their
-                features to train a model to predict the price of a car. The
-                accuracy of predicted price is arounf 92% which is pretty good.
-                I have used Supervised Learning to train the model.
-              </p>
-              <div
-                class="flex flex-wrap gap-3 text-[0.65rem] font-mono text-gray-400 mb-5"
-              >
-                <span
-                  class="bg-surface px-2 py-1 rounded border border-white/5 hover:text-accent transition-colors"
-                  >Python</span
-                >
-                <span
-                  class="bg-surface px-2 py-1 rounded border border-white/5 hover:text-accent transition-colors"
-                  >Machine Learning</span
-                >
-                <span
-                  class="bg-surface px-2 py-1 rounded border border-white/5 hover:text-accent transition-colors"
-                  >Supervised Learning</span
-                >
-              </div>
-
-              <div class="flex items-center gap-4">
-                <a
-                  href="https://github.com/ashutosh-bhagat/Car-Resale-Price"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="text-white hover:text-accent transition-colors text-sm font-medium border-b border-transparent hover:border-accent"
-                  >View Project</a
-                >
-                <a
-                  href="https://github.com/ashutosh-bhagat/Car-Resale-Price"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="text-textMuted hover:text-white transition-colors"
@@ -721,17 +721,12 @@
                 <i
                   class="fas fa-graduation-cap text-4xl md:text-5xl text-textMuted group-hover:text-accent transition-colors"
                 ></i>
-                <a
-                  href="https://mid-grade-prediction.streamlit.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src="./project-img/grade-prediction.png"
-                    alt="Clipy-Clipboard Screenshot"
-                    class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute inset-0 w-full h-full object-cover rounded-lg"
-                  />
-                </a>
+
+                <img
+                  src="./project-img/grade-prediction.png"
+                  alt="Clipy-Clipboard Screenshot"
+                  class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute inset-0 w-full h-full object-cover rounded-lg"
+                />
               </div>
             </div>
             <div class="md:col-span-7 flex flex-col justify-center">
