@@ -6,7 +6,9 @@ export default function Stack() {
           <h2 className="text-3xl font-display font-bold mb-4">
             Technical Proficiency
           </h2>
-          <p className="text-textMuted">A breakdown of my engineering toolkit.</p>
+          <p className="text-textMuted">
+            A breakdown of my engineering toolkit.
+          </p>
         </div>
 
         {/* Categories */}
@@ -33,8 +35,12 @@ export default function Stack() {
                 Scikit-Learn & Pandas
               </li>
               <li className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-white/20"></span> Data
-                Preprocessing
+                <span className="w-1.5 h-1.5 rounded-full bg-white/20"></span>{" "}
+                Natural Language Processing
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-white/20"></span>{" "}
+                Data Preprocessing
               </li>
             </ul>
           </div>
@@ -44,7 +50,9 @@ export default function Stack() {
             <div className="w-12 h-12 bg-white/5 rounded-lg flex items-center justify-center text-purple-400 mb-6">
               <i className="fas fa-laptop-code text-xl"></i>
             </div>
-            <h3 className="text-lg font-bold text-white mb-4">Frontend & Design</h3>
+            <h3 className="text-lg font-bold text-white mb-4">
+              Frontend & Design
+            </h3>
             <ul className="space-y-3 text-sm text-textMuted flex-1">
               <li className="flex items-center gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-white/20"></span>
@@ -60,10 +68,16 @@ export default function Stack() {
               </li>
               <li className="flex items-center gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-white/20"></span>
+                React
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-white/20"></span>
                 Graphic Design (Figma)
               </li>
             </ul>
           </div>
+
+          
         </div>
       </div>
     </section>

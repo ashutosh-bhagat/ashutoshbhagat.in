@@ -17,11 +17,7 @@ export default function Projects() {
               <div className="absolute inset-0 flex items-center justify-center bg-white/5 hover:bg-white/10 transition-colors">
                 <i className="fas fa-robot text-4xl md:text-5xl text-textMuted group-hover:text-accent transition-colors"></i>
 
-                <img
-                  src=""
-                  alt="Clipy-Clipboard Screenshot"
-                  className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute inset-0 w-full h-full object-cover rounded-lg"
-                />
+                
               </div>
             </div>
             <div className="md:col-span-7 flex flex-col justify-center">
@@ -29,11 +25,11 @@ export default function Projects() {
                 01. AI/NLP Project
               </div>
               <div
-                className="inline-flex items-center gap-2 px-2.5 py-0.5 rounded-full bg-white/5 border border-white/10 text-xs font-medium text-accent mb-2 w-auto"
+                className="inline-flex items-center gap-2 px-2.5 py-0.5 rounded-full bg-white/5 border border-white/10 text-xs font-medium text-yellow-400 mb-2 w-auto"
                 style={{ width: "fit-content", minWidth: 0 }}
               >
-                <span className="w-1.5 h-1.5 rounded-full bg-accent blink"></span>
-                <span>Deployed</span>
+                <span className="w-1.5 h-1.5 rounded-full bg-yellow-400 blink"></span>
+                <span>Live Codebase</span>
               </div>
               <h3 className="text-2xl font-bold text-white mb-3">News-Catcher</h3>
               <p className="text-textMuted mb-5 leading-relaxed text-base text-justify">
@@ -62,14 +58,14 @@ export default function Projects() {
                 </span>
               </div>
               <div className="flex items-center gap-4">
-                <a
+                {/* <a
                   href="https://github.com/ashutosh-bhagat/News-Catcher"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white hover:text-accent transition-colors text-sm font-medium border-b border-transparent hover:border-accent"
                 >
                   View Project
-                </a>
+                </a> */}
                 <a
                   href="https://github.com/ashutosh-bhagat/News-Catcher"
                   target="_blank"
@@ -92,11 +88,7 @@ export default function Projects() {
               <div className="absolute inset-0 flex items-center justify-center bg-white/5 hover:bg-white/10 transition-colors">
                 <i className="fas fa-clipboard text-4xl md:text-5xl text-textMuted group-hover:text-accent transition-colors"></i>
 
-                <img
-                  src="./project-img/clipy-clipboard.png"
-                  alt="Handwritten Digit Classifier screenshot"
-                  className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute inset-0 w-full h-full object-cover rounded-lg"
-                />
+                
               </div>
             </div>
             <div className="md:col-span-7 md:order-1 flex flex-col justify-center">
@@ -163,11 +155,7 @@ export default function Projects() {
               <div className="absolute inset-0 flex items-center justify-center bg-white/5 hover:bg-white/10 transition-colors">
                 <i className="fas fa-graduation-cap text-4xl md:text-5xl text-textMuted group-hover:text-accent transition-colors"></i>
 
-                <img
-                  src="./project-img/grade-prediction.png"
-                  alt="Clipy-Clipboard Screenshot"
-                  className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute inset-0 w-full h-full object-cover rounded-lg"
-                />
+                
               </div>
             </div>
             <div className="md:col-span-7 flex flex-col justify-center">

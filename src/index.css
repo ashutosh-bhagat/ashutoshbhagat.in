@@ -38,16 +38,3 @@ textarea:-webkit-autofill:focus {
     opacity: 0;
   }
 }
-
-/* Custom Cursor configurations for desktop */
-@media (pointer: fine) {
-  html.cursor-none,
-  html.cursor-none * {
-    cursor: none !important;
-  }
-  html.cursor-none input,
-  html.cursor-none textarea,
-  html.cursor-none select {
-    cursor: auto !important;
-  }
-}
