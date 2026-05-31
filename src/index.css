@@ -38,3 +38,13 @@ textarea:-webkit-autofill:focus {
     opacity: 0;
   }
 }
+
+/* Custom Cursor Override for fine pointers (desktops) */
+@media (pointer: fine) {
+  body, a, button, [role="button"], .cursor-pointer {
+    cursor: none;
+  }
+  input, textarea, select {
+    cursor: auto !important;
+  }
+}

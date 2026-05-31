@@ -4,10 +4,12 @@ import About from "./components/About";
 import Stack from "./components/Stack";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import CustomCursor from "./components/CustomCursor";
 
 export default function App() {
   return (
     <>
+      <CustomCursor />
       <Navbar />
       <Hero />
       <About />

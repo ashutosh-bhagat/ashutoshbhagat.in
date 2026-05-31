@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+// import { useEffect, useRef } from "react";
 
 export default function Hero() {
   const inputNodes = [60, 150, 240];

@@ -17,7 +17,7 @@ export default function Navbar() {
               href="#"
               className="font-display font-bold text-lg tracking-tight text-white hover:text-accent transition-colors flex items-center gap-2"
             >
-              <i className="fas fa-terminal text-accent text-sm"></i>
+              {/* <i className="fas fa-terminal text-accent text-sm"></i> */}
               <span>ashutosh<span className="text-accent">.</span></span>
             </a>
           </div>
