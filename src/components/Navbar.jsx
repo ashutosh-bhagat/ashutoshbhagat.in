@@ -12,7 +12,15 @@ export default function Navbar() {
       <div className="w-full px-4 sm:px-6 lg:px-16 xl:px-20">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div></div>
+          <div className="flex items-center">
+            <a
+              href="#"
+              className="font-display font-bold text-lg tracking-tight text-white hover:text-accent transition-colors flex items-center gap-2"
+            >
+              <i className="fas fa-terminal text-accent text-sm"></i>
+              <span>ashutosh<span className="text-accent">.</span></span>
+            </a>
+          </div>
 
           {/* Desktop Menu */}
           <div className="hidden md:block">

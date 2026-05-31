@@ -9,15 +9,16 @@ export default function Projects() {
         <div className="space-y-16">
           {/* Project 1 */}
           <div className="group grid grid-cols-1 md:grid-cols-12 gap-8 items-start border-b border-white/10 pb-10 grid-popup">
-            <div
-              className="md:col-span-5 relative overflow-hidden rounded-lg bg-surface aspect-video border border-white/5 max-w-2xl w-full mx-auto"
-              style={{ minHeight: "320px", maxHeight: "440px" }}
-            >
-              {/* Placeholder for Project Image */}
+            <div className="md:col-span-5 relative overflow-hidden rounded-lg bg-surface aspect-video border border-white/5 max-w-2xl w-full mx-auto min-h-[200px] sm:min-h-[260px] md:min-h-[300px] lg:min-h-[320px] max-h-[440px]">
+              {/* Responsive Project Image with Icon Fallback */}
               <div className="absolute inset-0 flex items-center justify-center bg-white/5 hover:bg-white/10 transition-colors">
-                <i className="fas fa-robot text-4xl md:text-5xl text-textMuted group-hover:text-accent transition-colors"></i>
-
-                
+                <i className="fas fa-robot text-4xl md:text-5xl text-textMuted group-hover:text-accent transition-colors z-0"></i>
+                <img
+                  src="./project-img/news-catcher.png"
+                  alt="News-Catcher Screenshot"
+                  className="absolute inset-0 w-full h-full object-cover opacity-75 group-hover:opacity-100 transition-opacity duration-500 z-10"
+                  onError={(e) => { e.target.style.display = 'none'; }}
+                />
               </div>
             </div>
             <div className="md:col-span-7 flex flex-col justify-center">
@@ -80,15 +81,16 @@ export default function Projects() {
 
           {/* Project 2 */}
           <div className="group grid grid-cols-1 md:grid-cols-12 gap-10 items-start border-b border-white/10 pb-10 grid-popup">
-            <div
-              className="md:col-span-5 md:order-2 relative overflow-hidden rounded-lg bg-surface aspect-video border border-white/5 max-w-2xl w-full mx-auto"
-              style={{ minHeight: "320px", maxHeight: "440px" }}
-            >
-              {/* Placeholder for Project Image */}
+            <div className="md:col-span-5 md:order-2 relative overflow-hidden rounded-lg bg-surface aspect-video border border-white/5 max-w-2xl w-full mx-auto min-h-[200px] sm:min-h-[260px] md:min-h-[300px] lg:min-h-[320px] max-h-[440px]">
+              {/* Responsive Project Image with Icon Fallback */}
               <div className="absolute inset-0 flex items-center justify-center bg-white/5 hover:bg-white/10 transition-colors">
-                <i className="fas fa-clipboard text-4xl md:text-5xl text-textMuted group-hover:text-accent transition-colors"></i>
-
-                
+                <i className="fas fa-clipboard text-4xl md:text-5xl text-textMuted group-hover:text-accent transition-colors z-0"></i>
+                <img
+                  src="./project-img/clipy-clipboard.png"
+                  alt="Clipy-Clipboard Screenshot"
+                  className="absolute inset-0 w-full h-full object-cover opacity-75 group-hover:opacity-100 transition-opacity duration-500 z-10"
+                  onError={(e) => { e.target.style.display = 'none'; }}
+                />
               </div>
             </div>
             <div className="md:col-span-7 md:order-1 flex flex-col justify-center">
@@ -147,15 +149,16 @@ export default function Projects() {
 
           {/* Project 3 */}
           <div className="group grid grid-cols-1 md:grid-cols-12 gap-8 items-start border-b border-white/10 pb-10 grid-popup">
-            <div
-              className="md:col-span-5 relative overflow-hidden rounded-lg bg-surface aspect-video border border-white/5 max-w-2xl w-full mx-auto"
-              style={{ minHeight: "320px", maxHeight: "440px" }}
-            >
-              {/* Placeholder for Project Image */}
+            <div className="md:col-span-5 relative overflow-hidden rounded-lg bg-surface aspect-video border border-white/5 max-w-2xl w-full mx-auto min-h-[200px] sm:min-h-[260px] md:min-h-[300px] lg:min-h-[320px] max-h-[440px]">
+              {/* Responsive Project Image with Icon Fallback */}
               <div className="absolute inset-0 flex items-center justify-center bg-white/5 hover:bg-white/10 transition-colors">
-                <i className="fas fa-graduation-cap text-4xl md:text-5xl text-textMuted group-hover:text-accent transition-colors"></i>
-
-                
+                <i className="fas fa-graduation-cap text-4xl md:text-5xl text-textMuted group-hover:text-accent transition-colors z-0"></i>
+                <img
+                  src="./project-img/grade-prediction.png"
+                  alt="Student Performance Prediction Screenshot"
+                  className="absolute inset-0 w-full h-full object-cover opacity-75 group-hover:opacity-100 transition-opacity duration-500 z-10"
+                  onError={(e) => { e.target.style.display = 'none'; }}
+                />
               </div>
             </div>
             <div className="md:col-span-7 flex flex-col justify-center">

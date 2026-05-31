@@ -11,10 +11,10 @@ export default function Stack() {
           </p>
         </div>
 
-        {/* Categories */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-          {/* Core */}
-          <div className="bg-background/80 p-7 rounded-2xl border border-white/5 hover:border-white/15 transition-colors h-full flex flex-col grid-popup">
+        {/* Categories (Responsive 3-column grid) */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+          {/* Core / AI & ML */}
+          <div className="bg-background/80 p-6 sm:p-7 rounded-2xl border border-white/5 hover:border-white/15 transition-colors h-full flex flex-col grid-popup">
             <div className="w-12 h-12 bg-white/5 rounded-lg flex items-center justify-center text-accent mb-6">
               <i className="fas fa-brain text-xl"></i>
             </div>
@@ -45,8 +45,8 @@ export default function Stack() {
             </ul>
           </div>
 
-          {/* Frontend */}
-          <div className="bg-background/80 p-7 rounded-2xl border border-white/5 hover:border-white/15 transition-colors h-full flex flex-col grid-popup">
+          {/* Frontend & Design */}
+          <div className="bg-background/80 p-6 sm:p-7 rounded-2xl border border-white/5 hover:border-white/15 transition-colors h-full flex flex-col grid-popup">
             <div className="w-12 h-12 bg-white/5 rounded-lg flex items-center justify-center text-purple-400 mb-6">
               <i className="fas fa-laptop-code text-xl"></i>
             </div>
@@ -77,7 +77,37 @@ export default function Stack() {
             </ul>
           </div>
 
-          
+          {/* Technical Concepts (New Column) */}
+          <div className="bg-background/80 p-6 sm:p-7 rounded-2xl border border-white/5 hover:border-white/15 transition-colors h-full flex flex-col grid-popup">
+            <div className="w-12 h-12 bg-white/5 rounded-lg flex items-center justify-center text-sky-400 mb-6">
+              <i className="fas fa-cubes text-xl"></i>
+            </div>
+            <h3 className="text-lg font-bold text-white mb-4">
+              Technical Concepts
+            </h3>
+            <ul className="space-y-3 text-sm text-textMuted flex-1">
+              <li className="flex items-center gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-white/20"></span>
+                Computer Networks
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-white/20"></span>
+                Database Management Systems (DBMS)
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-white/20"></span>
+                Software Engineering
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-white/20"></span>
+                Data Visualization
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-white/20"></span>
+                Data Analytics
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>

@@ -5,7 +5,7 @@ export default function About() {
       className="py-16 bg-background border-t border-white/5 relative"
     >
       <div className="w-full px-4 sm:px-6 lg:px-16 xl:px-20 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
           <div className="order-2 md:order-1">
             <h2 className="text-3xl font-display font-bold mb-6">About Me</h2>
             <div className="space-y-4 text-textMuted leading-relaxed text-lg">
@@ -19,11 +19,10 @@ export default function About() {
                 predictive models.
               </p>
               <p className="text-justify">
-                To bridge the gap between data and users, I mastered{" "}
-                <strong className="text-white">FastAPI</strong> and{" "}
-                <strong className="text-white">JavaScript</strong>. This allows me
-                to not just build models, but deploy them as scalable,
-                real-world applications.
+                To bridge the gap between data and users, I focused on frontend
+                development, mastering <strong className="text-white">JavaScript</strong> and
+                recently adopting <strong className="text-white">React</strong>. This allows me
+                to translate machine learning models into intuitive, interactive user experiences.
               </p>
             </div>
 
@@ -93,9 +92,9 @@ export default function About() {
             </div>
           </div>
 
-          <div className="order-1 md:order-2 flex justify-center md:justify-end">
-            {/* Clean Profile Image */}
-            <div className="w-96 h-[34rem] md:w-[30rem] md:h-[38rem] bg-surface rounded-2xl overflow-hidden border border-white/10 shadow-2xl group relative flex items-center justify-center">
+          <div className="order-1 md:order-2 flex justify-center md:justify-end w-full">
+            {/* Clean Responsive Profile Image */}
+            <div className="w-full max-w-sm h-[28rem] sm:h-[32rem] md:w-[28rem] md:h-[36rem] lg:w-[30rem] lg:h-[38rem] bg-surface rounded-2xl overflow-hidden border border-white/10 shadow-2xl group relative flex items-center justify-center">
               <img
                 src="./1000084543.jpg"
                 alt="Ashutosh Bhagat"
