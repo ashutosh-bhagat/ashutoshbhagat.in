@@ -96,15 +96,16 @@ export default function Stack() {
               </li>
               <li className="flex items-center gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-white/20"></span>
-                Software Engineering
+                Software Engineering & Testing
               </li>
               <li className="flex items-center gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-white/20"></span>
-                Data Visualization
+                Data Analytics & Visualization
               </li>
+              
               <li className="flex items-center gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-white/20"></span>
-                Data Analytics
+                Linux & Command Line
               </li>
             </ul>
           </div>

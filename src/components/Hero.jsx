@@ -1,5 +1,3 @@
-// import { useEffect, useRef } from "react";
-
 export default function Hero() {
   const inputNodes = [60, 150, 240];
   const hidden1Nodes = [45, 115, 185, 255];
@@ -21,48 +19,62 @@ export default function Hero() {
             {/* Availability Badge */}
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-medium text-accent mb-6 w-fit">
               <span className="w-1.5 h-1.5 rounded-full bg-accent blink"></span>
-              Available for hire
+              Available to hire
+            </div>
+
+            <div className="font-mono text-[10px] sm:text-sm tracking-wider text-textMuted/40 mb-3.5 lowercase flex items-center gap-1.5 select-none">
+              <span className="text-accent/60 font-semibold">
+                ashutosh@portfolio:~$
+              </span>
+              <span className="text-white">cat ashutosh-bhagat.sh</span>
             </div>
 
             {/* Main Title */}
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-bold leading-[1.05] tracking-tight mb-6">
-              ashutosh<br />bhagat<span className="text-accent">.</span>
+              ashutosh
+              <br />
+              bhagat<span className="text-accent">.</span>
             </h1>
 
             {/* Subtitle */}
             <p className="text-base md:text-lg text-textMuted leading-relaxed mb-8 max-w-xl">
-              Machine Learning Engineer & Frontend Developer.<br className="hidden md:block" />
+              Machine Learning Engineer & Frontend Developer.
+              <br className="hidden md:block" />
               Specializing in{" "}
-              <strong className="text-white">Supervised Learning</strong> models and
-              building interactive web interfaces with <strong className="text-white">React</strong>.
+              <strong className="text-white">Supervised Learning</strong> models
+              and building interactive web interfaces with{" "}
+              <strong className="text-white">React</strong>.
             </p>
 
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row justify-start gap-3">
-              <a
-                href="#projects"
-                className="px-7 py-3.5 bg-white text-black font-semibold rounded-lg hover:bg-gray-200 transition-colors w-full sm:w-auto text-center"
-              >
-                View My Work
-              </a>
-              <a
-                href="./Ashutosh_Bhagat_Resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-7 py-3.5 bg-transparent border border-white/20 text-white font-semibold rounded-lg hover:bg-white/5 transition-colors w-full sm:w-auto flex justify-center items-center gap-2 group"
-              >
-                My Resume
-                <i className="fas fa-arrow-down group-hover:translate-y-1 transition-transform"></i>
-              </a>
+            {/* CTA Buttons & Social Links */}
+            <div className="flex flex-col md:flex-row md:items-center gap-6">
+              <div className="flex flex-col sm:flex-row justify-start gap-3 w-full sm:w-auto">
+                <a
+                  href="#projects"
+                  className="px-7 py-3.5 bg-white text-black font-semibold rounded-lg hover:bg-gray-200 transition-colors w-full sm:w-auto text-center"
+                >
+                  View My Work
+                </a>
+                <a
+                  href="./Ashutosh_Bhagat_Resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-7 py-3.5 bg-transparent border border-white/20 text-white font-semibold rounded-lg hover:bg-white/5 transition-colors w-full sm:w-auto flex justify-center items-center gap-2 group"
+                >
+                  My Resume
+                  <i className="fas fa-arrow-down group-hover:translate-y-1 transition-transform"></i>
+                </a>
+              </div>
             </div>
           </div>
 
           {/* Right Column: Sleek Animated Node Graph (Thematic, Generalized, GPU-Accelerated) */}
           <div className="lg:col-span-5 flex justify-center items-center w-full max-w-lg lg:max-w-none mx-auto z-10 mt-6 lg:mt-0">
             <div className="w-full bg-[#0d0d0d]/80 border border-white/10 rounded-2xl p-4 sm:p-5 shadow-2xl backdrop-blur-md flex flex-col relative overflow-hidden">
-              
               {/* CSS Styles for hardware-accelerated animations */}
-              <style dangerouslySetInnerHTML={{ __html: `
+              <style
+                dangerouslySetInnerHTML={{
+                  __html: `
                 @keyframes flow {
                   to {
                     stroke-dashoffset: -20;
@@ -95,7 +107,9 @@ export default function Hero() {
                   filter: drop-shadow(0 0 10px #22c55e);
                   cursor: pointer;
                 }
-              `}} />
+              `,
+                }}
+              />
 
               {/* Window Header */}
               <div className="flex justify-between items-center pb-3 border-b border-white/5 mb-3 select-none">
@@ -104,13 +118,18 @@ export default function Hero() {
                   <span className="w-3 h-3 rounded-full bg-yellow-500/80"></span>
                   <span className="w-3 h-3 rounded-full bg-green-500/80"></span>
                 </div>
-                <span className="text-[10px] font-mono text-textMuted uppercase tracking-wider">Model Topology</span>
+                <span className="text-[10px] font-mono text-textMuted uppercase tracking-wider">
+                  Model Topology
+                </span>
                 <span className="w-12"></span>
               </div>
 
               {/* SVG Canvas Area */}
               <div className="w-full flex justify-center py-2">
-                <svg viewBox="0 0 400 300" className="w-full h-auto max-w-[380px]">
+                <svg
+                  viewBox="0 0 400 300"
+                  className="w-full h-auto max-w-[380px]"
+                >
                   {/* Layer Connections (Synapses) */}
                   {/* 1. Input to Hidden 1 */}
                   {inputNodes.map((y1, i) =>
@@ -124,7 +143,7 @@ export default function Hero() {
                         className="synapse"
                         style={{ animationDelay: `${(i + j) * 0.1}s` }}
                       />
-                    ))
+                    )),
                   )}
 
                   {/* 2. Hidden 1 to Hidden 2 */}
@@ -139,7 +158,7 @@ export default function Hero() {
                         className="synapse"
                         style={{ animationDelay: `${0.3 + (i + j) * 0.1}s` }}
                       />
-                    ))
+                    )),
                   )}
 
                   {/* 3. Hidden 2 to Output */}
@@ -154,7 +173,7 @@ export default function Hero() {
                         className="synapse"
                         style={{ animationDelay: `${0.6 + i * 0.15}s` }}
                       />
-                    ))
+                    )),
                   )}
 
                   {/* Layer Nodes (Neurons) */}
@@ -212,22 +231,23 @@ export default function Hero() {
               <div className="mt-4 p-4 bg-background/60 rounded-xl border border-accent/20 relative overflow-hidden shadow-inner shadow-accent/5">
                 {/* Accent Glow Line */}
                 <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-accent via-accent/50 to-transparent"></div>
-                
+
                 <div className="pl-3">
                   <div className="flex items-center gap-1.5 mb-2">
                     <i className="fas fa-network-wired text-[10px] text-accent"></i>
-                    <span className="text-[9px] font-mono text-accent uppercase tracking-widest font-semibold">
+                    <span className="text-[10px] font-mono text-accent uppercase tracking-widest font-semibold">
                       Synaptic Connection Principle
                     </span>
                   </div>
                   <p className="text-xs sm:text-[13px] text-white leading-relaxed font-display font-medium tracking-wide">
-                    "In both silicon and synapses, intelligence is not stored in nodes, but forged in the connections between them."
+                    In both silicon and synapses, intelligence is not stored in
+                    nodes, but forged in the connections between them.
                   </p>
                 </div>
               </div>
 
               {/* Window Footer Detail */}
-              <div className="flex justify-between items-center pt-3 text-[9px] font-mono text-textMuted select-none opacity-40 mt-1">
+              <div className="flex justify-between items-center pt-3 text-[10px] font-mono text-textMuted select-none opacity-40 mt-1">
                 <span>Input: [x₁, x₂, x₃]</span>
                 <span>Output: [ŷ]</span>
               </div>
