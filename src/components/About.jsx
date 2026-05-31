@@ -93,13 +93,18 @@ export default function About() {
           </div>
 
           <div className="order-1 md:order-2 flex justify-center md:justify-end w-full">
-            {/* Clean Responsive Profile Image */}
-            <div className="w-full max-w-sm h-[28rem] sm:h-[32rem] md:w-[28rem] md:h-[36rem] lg:w-[30rem] lg:h-[38rem] bg-surface rounded-2xl overflow-hidden border border-white/10 shadow-2xl group relative flex items-center justify-center">
-              <img
-                src="./1000084543.jpg"
-                alt="Ashutosh Bhagat"
-                className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 ease-in-out"
-              />
+            {/* Framed Profile Picture with Shifting Accent Border */}
+            <div className="relative group w-full max-w-xs h-[24rem] sm:max-w-sm sm:h-[28rem] md:w-[28rem] md:h-[34rem] lg:w-[30rem] lg:h-[38rem]">
+              {/* Shifting Accent Outline Frame */}
+              <div className="absolute inset-0 border border-accent/30 rounded-2xl translate-x-3 translate-y-3 group-hover:translate-x-0 group-hover:translate-y-0 transition-transform duration-500 ease-out z-0"></div>
+              {/* Profile image container */}
+              <div className="absolute inset-0 bg-surface rounded-2xl overflow-hidden border border-white/10 shadow-2xl z-10">
+                <img
+                  src="./1000084543.jpg"
+                  alt="Ashutosh Bhagat"
+                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 ease-in-out"
+                />
+              </div>
             </div>
           </div>
         </div>
