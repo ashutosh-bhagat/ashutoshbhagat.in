@@ -19,7 +19,7 @@ export default function Hero() {
             {/* Availability Badge */}
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-medium text-accent mb-6 w-fit">
               <span className="w-1.5 h-1.5 rounded-full bg-accent blink"></span>
-              Available to hire
+              Open to Work
             </div>
 
             <div className="font-mono text-[10px] sm:text-sm tracking-wider text-textMuted/40 mb-3.5 lowercase flex items-center gap-1.5 select-none">
