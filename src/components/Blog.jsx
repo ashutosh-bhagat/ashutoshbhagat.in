@@ -1,7 +1,7 @@
 const blogs = [
   {
     id: 1,
-    title: "I Built a Home NAS from a Dead PC and a Forgotten Router — and Learnt Networking",
+    title: "I Built a Home NAS from a Dead PC and a Forgotten Router and Learnt Networking",
     excerpt:
       "A hands-on dive into repurposing old hardware into a functional home NAS, covering subnetting, static IPs, SMB shares, and everything networking in between.",
     tags: ["Networking", "NAS", "Linux", "Hardware"],
