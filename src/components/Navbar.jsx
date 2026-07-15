@@ -44,6 +44,12 @@ export default function Navbar() {
                 Work
               </a>
               <a
+                href="#blog"
+                className="text-sm font-medium text-textMuted hover:text-white transition-colors"
+              >
+                Blog
+              </a>
+              <a
                 href="#contact"
                 className="px-5 py-2.5 text-sm font-medium border border-white/20 rounded-full hover:bg-white hover:text-black transition-all duration-300"
               >
@@ -93,6 +99,13 @@ export default function Navbar() {
             className="block px-3 py-2 text-base font-medium text-textMuted hover:text-white"
           >
             Work
+          </a>
+          <a
+            href="#blog"
+            onClick={toggleMenu}
+            className="block px-3 py-2 text-base font-medium text-textMuted hover:text-white"
+          >
+            Blog
           </a>
           <a
             href="#contact"
