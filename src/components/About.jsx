@@ -100,7 +100,7 @@ export default function About() {
               {/* Profile image container */}
               <div className="absolute inset-0 bg-surface rounded-2xl overflow-hidden border border-white/10 shadow-2xl z-10">
                 <img
-                  src="./1000084543.jpg"
+                  src="../../public/Ashutosh.jpeg"
                   alt="Ashutosh Bhagat"
                   className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 ease-in-out"
                 />
