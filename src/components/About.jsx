@@ -14,15 +14,17 @@ export default function About() {
                 Designer, cultivating an eye for detail and user experience.
                 Driven by curiosity, I transitioned into engineering, finding my
                 true passion in{" "}
-                <strong className="text-white">Machine Learning</strong>. I thrive
-                on the logic of algorithms and the challenge of optimizing
-                predictive models.
+                <strong className="text-white">Machine Learning</strong>. I
+                thrive on the logic of algorithms and the challenge of
+                optimizing predictive models.
               </p>
               <p className="text-justify">
                 To bridge the gap between data and users, I focused on frontend
-                development, mastering <strong className="text-white">JavaScript</strong> and
-                recently adopting <strong className="text-white">React</strong>. This allows me
-                to translate machine learning models into intuitive, interactive user experiences.
+                development, mastering{" "}
+                <strong className="text-white">JavaScript</strong> and recently
+                adopting <strong className="text-white">React</strong>. This
+                allows me to translate machine learning models into intuitive,
+                interactive user experiences.
               </p>
             </div>
 
@@ -36,7 +38,7 @@ export default function About() {
                   style={{ width: "56px", height: "56px" }}
                 >
                   <img
-                    src="./ISTE.png"
+                    src="/public/ISTE.png"
                     alt="AWS UG Community Vadodara"
                     className="object-contain w-10 h-10"
                     style={{ filter: "brightness(0.8) contrast(1)" }}
@@ -55,7 +57,7 @@ export default function About() {
                   style={{ width: "56px", height: "56px" }}
                 >
                   <img
-                    src="./aim logo.png"
+                    src="/public/aim logo.png"
                     alt="A.I.M. Club"
                     className="object-contain w-10 h-10"
                     style={{ filter: "brightness(1) contrast(1.25)" }}
@@ -74,7 +76,7 @@ export default function About() {
                   style={{ width: "56px", height: "56px" }}
                 >
                   <img
-                    src="./aws.svg"
+                    src="/public/aws.svg"
                     alt="AWS UG Community Vadodara"
                     className="object-contain w-10 h-10"
                     style={{ filter: "brightness(1) contrast(1.25)" }}
@@ -100,7 +102,7 @@ export default function About() {
               {/* Profile image container */}
               <div className="absolute inset-0 bg-surface rounded-2xl overflow-hidden border border-white/10 shadow-2xl z-10">
                 <img
-                  src="../../public/Ashutosh.jpeg"
+                  src="/public/Ashutosh.jpeg"
                   alt="Ashutosh Bhagat"
                   className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 ease-in-out"
                 />
